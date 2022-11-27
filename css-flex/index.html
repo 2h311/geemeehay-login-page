@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Welcome!</title>
+  </head>
+
+  <body>
+    <div class="left">
+      <div class="left__container">
+
+        <header class="header">
+          <h1 class="header__h1">Welcome!</h1>
+          <p class="header__paragraph">Register your account.</p>
+        </header>
+
+        <form class="form">
+          <div class="form__group">
+            <label for="fullname" class="form__label">Name</label>
+            <input type="text" id="fullname" class="form__input" placeholder="Stewie Griffin" autofocus required>
+          </div>
+
+          <div class="form__group">
+            <label for="email" class="form__label">Email</label>
+            <input type="email" id="email" class="form__input" placeholder="stg@thefamilyguy.com" required>
+          </div>
+
+          <div class="form__group">
+            <label for="password" class="form__label">Password</label>
+            <input type="password" id="password" class="form__input" placeholder="6+ character" required>
+          </div>
+
+          <div class="form__container">
+            <label for="remember-me" class="form__label form__checkbox-container">Remember me
+              <input type="checkbox" name="remember-me" id="remember-me" class="form__checkbox" checked>
+              <span class="form__checkmark"></span>
+            </label>
+          </div>
+
+          <div class="form__group form__group--link">
+            <button type="submit" class="btn btn--submit">create account</button>
+            <a href="#" class="form__link">Already have an account? <span class="form__link--signin">Sign in</span></a>
+          </div>
+        </form>
+
+        <footer class="footer">
+          <div class="footer__text">
+            <span>or sign up with</span>
+          </div>
+          <div class="footer__icons">
+            <img src="../assets/Google.svg" alt="Facebook" class="footer__icon">
+            <img src="../assets/Twitter.svg" alt="Facebook" class="footer__icon">
+            <img src="../assets/Facebook F.svg" alt="Facebook" class="footer__icon">
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div class="right">
+      <img src="../assets/Girl is working on laptop at a remote job.png" alt="Girl is working on laptop at a remote job"
+        class="right__image">
+    </div>
+  </body>
+
+</html>

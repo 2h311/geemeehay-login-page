@@ -1,0 +1,113 @@
+.form {
+  margin-top: 5rem; // TODO: remove this later
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  &__group {
+    display: inherit;
+    flex-direction: column;
+    gap: .6rem;
+
+    &--link {
+      gap: 1.6rem;
+    }
+  }
+
+  &__input {
+    border: 0;
+    border-radius: 3px;
+    padding: 1.4rem 1.8rem;
+    font-size: 1.45rem;
+    box-shadow: 0 .15rem .25rem rgba(0, 0, 0, 0.1);
+
+    &:focus-visible {
+      outline-color: $color-pink-dark;
+    }
+  }
+
+  &__label {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  &__checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+    user-select: none;
+
+    & input {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+      cursor: pointer;
+    }
+
+    & input:checked~.form__checkmark {
+      background-color: $color-pink-dark;
+
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 50%;
+    background-color: $color-pink-dark;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: .6rem;
+      top: .3rem;
+      width: .3rem;
+      height: .7rem;
+      border: solid $color-white;
+      border-width: 0 .3rem .3rem 0;
+      transform: rotate(45deg);
+      display: none;
+    }
+  }
+
+  &__link {
+
+    &:link,
+    &:visited {
+
+      text-align: center;
+      text-decoration: none;
+      color: $color-grey-light;
+      font-size: 1.6rem;
+    }
+
+    &--signin {
+      color: $color-pink-dark;
+    }
+  }
+}
+
+.btn {
+  &--submit {
+    background-color: $color-pink-dark;
+    color: $color-white;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 3px;
+    padding: 1.6rem 2.4rem;
+    margin-top: 1.5rem;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,35 @@
+.footer {
+  margin-top: 4rem;
+  text-align: center;
+
+  &__text span {
+    font-size: 1.6rem;
+    position: relative;
+
+    &::after,
+    &::before {
+      content: "";
+      height: .15rem;
+      width: 1.6rem;
+      background-color: black;
+      position: absolute;
+      top: 1rem;
+    }
+
+    &::after {
+      right: -2.5rem;
+    }
+
+    &::before {
+      left: -2.5rem;
+    }
+  }
+
+  &__icons {
+    margin-top: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

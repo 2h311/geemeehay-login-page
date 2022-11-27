@@ -1,0 +1,27 @@
+.left {
+  width: 60%;
+  background: $color-pink-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__container {
+    margin-left: 12rem;
+    margin-right: 30rem;
+  }
+}
+
+.right {
+  width: 40%;
+  background: $color-pink-dark;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__image {
+    width: 32rem;
+    display: flex;
+    margin: 0 auto;
+  }
+}

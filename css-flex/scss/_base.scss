@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media only screen and (min-width: 160em) {
+    font-size: 97%;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+///////////////
+// VARIABLES
+$color-pink-light: #FAF5F5;
+$color-pink-dark: #D21766;
+$color-pink-darker: #a00f4b;
+$color-grey-light: #6B7886;
+$color-white: #FFF;
+////////////////////////////////
