@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', path='css-flex/css/styles.min.css')}}">
     <title>Welcome!</title>
   </head>
 
@@ -52,16 +52,16 @@
             <span>or sign up with</span>
           </div>
           <div class="footer__icons">
-            <img src="../assets/Google.svg" alt="Facebook" class="footer__icon">
-            <img src="../assets/Twitter.svg" alt="Facebook" class="footer__icon">
-            <img src="../assets/Facebook F.svg" alt="Facebook" class="footer__icon">
+            <img src="{{url_for('static', path='assets/Google.svg')}}" alt="Facebook" class="footer__icon">
+            <img src="{{url_for('static', path='assets/Twitter.svg')}}" alt="Facebook" class="footer__icon">
+            <img src="{{url_for('static', path='assets/Facebook F.svg')}}" alt="Facebook" class="footer__icon">
           </div>
         </footer>
       </div>
     </div>
 
     <div class="right">
-      <img src="../assets/Girl is working on laptop at a remote job.png" alt="Girl is working on laptop at a remote job"
+      <img src="{{ url_for('static', path='assets/Girl is working on laptop at a remote job.png') }}" alt="Girl is working on laptop at a remote job"
         class="right__image">
     </div>
   </body>
